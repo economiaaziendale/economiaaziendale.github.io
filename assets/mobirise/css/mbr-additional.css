@@ -1388,6 +1388,26 @@ body {
   font-size: 72px;
   color: #707070;
 }
+.cid-qJkq0Vid2f {
+  background-image: url("../../../assets/images/background1.jpg");
+}
+.cid-qJkq0Vid2f h1 {
+  color: #616161;
+}
+.cid-qJkq0Vid2f h2,
+.cid-qJkq0Vid2f h3,
+.cid-qJkq0Vid2f p {
+  color: #767676;
+}
+.cid-qJkq0Vid2f .mbr-section-subtitle {
+  font-style: italic;
+}
+#custom-html-4 {
+  /* Type valid CSS here */
+}
+#custom-html-4 .my-image {
+  width: 100%;
+}
 .cid-qIoeWvun6q {
   padding-top: 60px;
   padding-bottom: 60px;

@@ -29,7 +29,7 @@
       }
     },
     "versionFirst": "4.6.2",
-    "uniqCompNum": 3,
+    "uniqCompNum": 5,
     "versionPublish": "4.6.2",
     "path": "@PROJECT_PATH@"
   },
@@ -100,6 +100,53 @@
           "_global": false,
           "_once": false,
           "_params": {}
+        },
+        {
+          "_styles": {
+            "& when not (@fullScreen)": {
+              "padding-top": "(@paddingTop * 15px)",
+              "padding-bottom": "(@paddingBottom * 15px)"
+            },
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            "h1": {
+              "color": "#616161"
+            },
+            "h2, h3, p": {
+              "color": "#767676"
+            },
+            ".mbr-section-subtitle": {
+              "font-style": "italic"
+            }
+          },
+          "_name": "header9",
+          "_customHTML": "<section class=\"header9\" group=\"Headers\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{'mbr-fullscreen': fullScreen,\n                    'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\" checked>\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"9\" step=\"1\" value=\"6\" condition=\"fullScreen == false\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"9\" step=\"1\" value=\"6\" condition=\"fullScreen == false\">\n        <input type=\"checkbox\" title=\"Show Arrow\" name=\"showArrow\">\n\n        <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Show Subtitle\" name=\"showSubTitle\" checked>\n        <input type=\"checkbox\" title=\"Show Text\" name=\"showText\" checked>\n        <input type=\"checkbox\" title=\"Show Buttons\" name=\"showButtons\">\n\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Background Image\" value=\"../_images/background1.jpg\" selected parallax>\n            <input type=\"color\" title=\"Background Color\" value=\"#ffffff\">\n            <input type=\"video\" title=\"Background Video\" value=\"http://www.youtube.com/watch?v=uNCr7NdOJgw\">\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\">\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#000000\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.2\" condition=\"overlay && bg.type !== 'color'\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n\n    <div class=\"container\">\n        <div class=\"media-container-column mbr-white col-md-8\">\n            <h1 class=\"mbr-section-title align-left mbr-bold pb-3 mbr-fonts-style\" mbr-theme-style=\"display-1\" mbr-if=\"showTitle\">\n                Indici di bilancio</h1>\n            <h3 class=\"mbr-section-subtitle align-left mbr-light pb-3 mbr-fonts-style\" mbr-theme-style=\"display-2\" mbr-if=\"showSubTitle\">Analisi della solvibilità dell'impresa</h3>\n            <p class=\"mbr-text align-left pb-3 mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showText\">\n                Il patrimonio circolante netto (PCN) è il risultato della differenza tra l'attivo circolante (o attivo corrente) e i debiti a breve e media scadenza.<br>PCN = Attivo corrente - Debiti a breve (AC -Pb)<br>Nell'esempio seguente l'attivo corrente è pari a 200.000 € (manca una voce nello schema: le rimanenze per 180.000 €; questo valore lo deduciamo facendo la differenza tra impieghi e immobilizzazioni = 300.000 - 100.000 = 200.000.<br>PCN = AC - Pb = 200.000 - 20.000 = 180.000<br>Il circolante al netto dei debiti è nettamente superiore ai debiti a breve, per cui la grado di solvibilità dell'impresa è ottimale, l'impresa può far fronte ai propri impegni. Nel caso specifico, però, occorre analizzare la solvibilità delle rimanenze. Se andiamo ad analizzare le singole voci dell'attivo circolante, notiamo che i crediti sono pari a 10.000 euro e in banca ci sono 10.000 euro. Bisogna analizzare quindi la scadenza dei crediti e dei debiti a breve per capire con certezza se avremo la liquidità necessaria. Occorre anche analizzare quanto tempo impiegheremo per trasformare le rimanenze in risorse liquide, nel caso i crediti avessero una scadenza superiore ai debiti a breve.<br>Il margine di tesoreria (disponibilità liquide e differite / debiti a breve) è infatti pari a 0, bisogna, quindi, verificare quanto sopra, in quanto l'indice di liquidità primaria è inferiore a zero (0,5) ed indicherebbe un livello di squilibrio.<br><br><br></p>\n            \n            <img src=\"https://economiaaziendale.github.io/img/pcn.gif\"> \n            \n            <div class=\"mbr-section-btn align-left\" mbr-if=\"showButtons\" mbr-buttons mbr-theme-style=\"display-4\">\n                <a class=\"btn btn-md btn-primary\" href=\"https://mobirise.com\">LEARN MORE</a>\n                <a class=\"btn btn-md btn-black-outline\" href=\"https://mobirise.com\">LIVE DEMO</a>\n            </div>\n        </div>\n    </div>\n\n    <div mbr-if=\"showArrow\" class=\"mbr-arrow hidden-sm-down\" aria-hidden=\"true\">\n        <a href=\"#next\">\n            <i class=\"mbri-down mbr-iconfont\"></i>\n        </a>\n    </div>\n</section>",
+          "_cid": "qJkq0Vid2f",
+          "_anchor": "header9-3",
+          "_PHPplaceholders": [],
+          "_JSplaceholders": [],
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "_customTemplate": true,
+          "_afterNavbarItem": false,
+          "_customHTML": "<!-- Type valid HTML here -->\n\n<h1>Indici di redditività</h1> \n\n<div id=\"divROE\">[---]</div>\n<button id=\"ROE\" onclick=\"divROE.innerHTML='return on equity = utile/capitale proprio'\">ROE</button>\n<div id=\"divROI\">[---]</div>\n<button id=\"ROI\" onclick=\"divROI.innerHTML='Return on investment = utile operativo / impieghi'\">ROI</button>\n<div id=\"divInc\">[---]</div>\n<button id=\"Incidenza della gestione caratteristica\" onclick=\"divInc.innerHTML='utile / reddito operativo'\">Incidenza della gestione caratteristica</button>",
+          "_customCSS": "/* Type valid CSS here */\n.my-image {\n  width: 100%;\n}",
+          "alias": "code-editor",
+          "_tags": [
+            "Extension"
+          ],
+          "_name": "pro.custom-html",
+          "_anchor": "custom-html-4",
+          "_PHPplaceholders": [],
+          "_JSplaceholders": []
         }
       ]
     },
