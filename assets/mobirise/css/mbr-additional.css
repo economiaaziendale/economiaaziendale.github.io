@@ -1368,9 +1368,12 @@ body {
   padding-bottom: 90px;
   background-image: url("../../../assets/images/mbr-1912x1080.jpg");
 }
-.cid-qK7muQsB1i {
-  padding-top: 90px;
-  padding-bottom: 90px;
+.cid-qK7KOst0Xk {
+  background: linear-gradient(45deg, #fbac7f, #e5658a);
+}
+.cid-qK7KOst0Xk .mbr-section-subtitle {
+  font-style: italic;
+  letter-spacing: 1rem;
 }
 .cid-qIoeWvun6q {
   padding-top: 60px;
