@@ -42,7 +42,7 @@
 
 </section>
 
-<section class="engine"><a href="https://mobirise.ws/p">open source web page maker</a></section><section class="header4 cid-qKdv1hkbgp mbr-parallax-background" id="header4-9">
+<section class="engine"><a href="https://mobirise.ws/l">free html site creator</a></section><section class="header4 cid-qKdv1hkbgp mbr-parallax-background" id="header4-9">
 
     
 
@@ -52,25 +52,51 @@
         <div class="row justify-content-md-center">
             <div class="media-content col-md-10">
                 <h1 class="mbr-section-title align-center mbr-white pb-3 mbr-bold mbr-fonts-style display-1">
-                    INTRO WITH IMAGE
-                </h1>
+                    Indici di bilancio</h1>
                 
                 <div class="mbr-text align-center mbr-white pb-3">
                     <p class="mbr-text mbr-fonts-style display-5">
-                        Intro with background image, color overlay and a picture at the bottom. Mobirise helps you cut down development time by providing you with a flexible website editor with a drag and drop interface.
-                    </p>
+                        Sono molto utili per analizzare lo stato di salute dell'azienda. Utilizziamo degli indici per verificare se la struttura è rigida, se è solida, se l'impresa è in equilibrio dal punto di vista finanziario ed economico ecc.</p>
                 </div>
-                <div class="mbr-section-btn align-center">
-                    <a class="btn btn-md btn-primary display-4" href="https://mobirise.com">LEARN MORE</a>
-                    <a class="btn btn-md btn-white-outline display-4" href="https://mobirise.com">LIVE DEMO</a>
-                </div>
+                
             </div>
             <div class="mbr-figure pt-5">
-                <img src="assets/images/indici-short-200x200.png" alt="Mobirise" title="" style="width: 15%;">
+                <a href="https://docs.google.com/document/d/13DfQaOJ5HvfqWmi4r_sZY0rlttw9jhhnq4Xww-2HfNg/edit?usp=sharing"><img src="assets/images/indici-short-200x200.png" alt="Mobirise" title="" style="width: 15%;"></a>
             </div>
         </div>
     </div>
 </section>
+
+<div id="custom-html-b" custom-code="true" data-rv-view="20">
+<center>
+    <div id="colors">
+        <button id="orange">click</button>
+        <button id="green">click</button>
+        <button id="blue">click</button>
+    </div>
+</center>
+
+<h1 id="big"></h1>
+
+
+<script src="https://www.gstatic.com/firebasejs/4.10.0/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyDp-mWaWEI07pIdRUhi6vA-salEMRWz4hw",
+    authDomain: "quiz-e5e5a.firebaseapp.com",
+    databaseURL: "https://quiz-e5e5a.firebaseio.com",
+    projectId: "quiz-e5e5a",
+    storageBucket: "quiz-e5e5a.appspot.com",
+    messagingSenderId: "901845403492"
+  };
+  firebase.initializeApp(config);
+
+    var big = document.getElementById("big");
+    var dbref = firebase.database().ref().child("text");
+    dbref.on("value", snap => big.innerText = snap.val());
+
+</script></div>
 
 
   <script src="assets/web/assets/jquery/jquery.min.js"></script>
