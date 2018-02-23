@@ -42,7 +42,7 @@
 
 </section>
 
-<section class="engine"><a href="https://mobirise.ws/o">best mobile website builder</a></section><section class="header4 cid-qKdv1hkbgp mbr-parallax-background" id="header4-9">
+<section class="engine"><a href="https://mobirise.ws/d">best web page software</a></section><section class="header4 cid-qKdv1hkbgp mbr-parallax-background" id="header4-9">
 
     
 
@@ -112,7 +112,28 @@
     var terze = document.getElementById("terze");
     var dbref = firebase.database().ref().child("terze");
     dbref.on("value", snap => terze.innerText = snap.val());
-
+    
+    var quinta_txt = document.getElementById("quinta_txt");
+    var dbref = firebase.database().ref().child("quinta_txt");
+    dbref.on("value", snap => quinta_txt.innerText = snap.val());
+    
+    var quarta_txt = document.getElementById("quarta_txt");
+    var dbref = firebase.database().ref().child("quarta_txt");
+    dbref.on("value", snap => quarta_txt.innerText = snap.val());
+    /*
+    var terze_txt = document.getElementById("terze_txt");
+    var dbref = firebase.database().ref().child("terze_txt");
+    dbref.on("value", snap => terze_txt.innerText = snap.val());
+*/
+    def creavar(id,name){
+	var id = document.getElementById(name);
+    var dbref = firebase.database().ref().child(name);
+    dbref.on("value", snap => id.innerText = snap.val()); 
+    }
+    
+    var terze_txt;
+    creavar(terze_txt,"terze_txt")
+    
 </script></div>
 
 
