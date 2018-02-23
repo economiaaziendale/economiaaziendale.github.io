@@ -42,7 +42,7 @@
 
 </section>
 
-<section class="engine"><a href="https://mobirise.ws/l">free html site creator</a></section><section class="header4 cid-qKdv1hkbgp mbr-parallax-background" id="header4-9">
+<section class="engine"><a href="https://mobirise.ws/d">best web page software</a></section><section class="header4 cid-qKdv1hkbgp mbr-parallax-background" id="header4-9">
 
     
 
@@ -67,7 +67,7 @@
     </div>
 </section>
 
-<div id="custom-html-b" custom-code="true" data-rv-view="20">
+<div id="custom-html-b" custom-code="true" data-rv-view="6">
 <center>
     <div id="colors">
         <button id="orange">click</button>
@@ -76,8 +76,14 @@
     </div>
 </center>
 
-<h1 id="big"></h1>
+<h1>5bs</h1>
+<h3 id="quinta"></h3>
 
+<h1>4bs</h1>
+<h3 id="quarta"></h3>
+
+<h1>3be e 3acc</h1>
+<h3 id="terze"></h3>
 
 <script src="https://www.gstatic.com/firebasejs/4.10.0/firebase.js"></script>
 <script>
@@ -92,9 +98,17 @@
   };
   firebase.initializeApp(config);
 
-    var big = document.getElementById("big");
-    var dbref = firebase.database().ref().child("text");
-    dbref.on("value", snap => big.innerText = snap.val());
+    var quinta = document.getElementById("quinta");
+    var dbref = firebase.database().ref().child("quinta");
+    dbref.on("value", snap => quinta.innerText = snap.val());
+    
+    var quarta = document.getElementById("quarta");
+    var dbref = firebase.database().ref().child("quarta");
+    dbref.on("value", snap => quarta.innerText = snap.val());
+    
+    var terze = document.getElementById("terze");
+    var dbref = firebase.database().ref().child("terze");
+    dbref.on("value", snap => terze.innerText = snap.val());
 
 </script></div>
 
