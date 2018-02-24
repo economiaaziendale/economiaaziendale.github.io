@@ -29,7 +29,7 @@
       }
     },
     "versionFirst": "4.6.2",
-    "uniqCompNum": 12,
+    "uniqCompNum": 13,
     "versionPublish": "4.6.2",
     "path": "@PROJECT_PATH@"
   },
@@ -120,6 +120,42 @@
             "<script src=\"https://www.gstatic.com/firebasejs/4.10.0/firebase.js\"></script>",
             "<script>\n  // Initialize Firebase\n  var config = {\n    apiKey: \"AIzaSyDp-mWaWEI07pIdRUhi6vA-salEMRWz4hw\",\n    authDomain: \"quiz-e5e5a.firebaseapp.com\",\n    databaseURL: \"https://quiz-e5e5a.firebaseio.com\",\n    projectId: \"quiz-e5e5a\",\n    storageBucket: \"quiz-e5e5a.appspot.com\",\n    messagingSenderId: \"901845403492\"\n  };\n  firebase.initializeApp(config);\n\n    var quinta = document.getElementById(\"quinta\");\n    var dbref = firebase.database().ref().child(\"quinta\");\n    dbref.on(\"value\", snap => quinta.innerText = snap.val());\n    \n    var quarta = document.getElementById(\"quarta\");\n    var dbref = firebase.database().ref().child(\"quarta\");\n    dbref.on(\"value\", snap => quarta.innerText = snap.val());\n    \n    var terze = document.getElementById(\"terze\");\n    var dbref = firebase.database().ref().child(\"terze\");\n    dbref.on(\"value\", snap => terze.innerText = snap.val());\n    \n    var quinta_txt = document.getElementById(\"quinta_txt\");\n    var dbref = firebase.database().ref().child(\"quinta_txt\");\n    dbref.on(\"value\", snap => quinta_txt.innerText = snap.val());\n    \n    var quarta_txt = document.getElementById(\"quarta_txt\");\n    var dbref = firebase.database().ref().child(\"quarta_txt\");\n    dbref.on(\"value\", snap => quarta_txt.innerText = snap.val());\n\n    var terze_txt = document.getElementById(\"terze_txt\");\n    var dbref = firebase.database().ref().child(\"terze_txt\");\n    dbref.on(\"value\", snap => terze_txt.innerText = snap.val());\n    /*\n    def creavar(id,name){\n\tvar id = document.getElementById(name);\n    var dbref = firebase.database().ref().child(name);\n    dbref.on(\"value\", snap => id.innerText = snap.val()); \n    }\n    \n    var terze_txt;\n    creavar(terze_txt,\"terze_txt\")\n  */  \n</script>"
           ]
+        },
+        {
+          "_styles": {
+            "& when not (@fullScreen)": {
+              "padding-top": "(@paddingTop * 15px)",
+              "padding-bottom": "(@paddingBottom * 15px)"
+            },
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            "h1": {
+              "color": "#616161"
+            },
+            "h2, h3, p": {
+              "color": "#767676"
+            },
+            ".mbr-section-subtitle": {
+              "font-style": "italic"
+            }
+          },
+          "_name": "header9",
+          "_customHTML": "<section class=\"header9\" group=\"Headers\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{'mbr-fullscreen': fullScreen,\n                    'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\" checked>\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"9\" step=\"1\" value=\"6\" condition=\"fullScreen == false\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"9\" step=\"1\" value=\"6\" condition=\"fullScreen == false\">\n        <input type=\"checkbox\" title=\"Show Arrow\" name=\"showArrow\" checked>\n\n        <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Show Subtitle\" name=\"showSubTitle\" checked>\n        <input type=\"checkbox\" title=\"Show Text\" name=\"showText\" checked>\n        <input type=\"checkbox\" title=\"Show Buttons\" name=\"showButtons\">\n\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Background Image\" value=\"../_images/background1.jpg\" selected parallax>\n            <input type=\"color\" title=\"Background Color\" value=\"#ffffff\">\n            <input type=\"video\" title=\"Background Video\" value=\"http://www.youtube.com/watch?v=uNCr7NdOJgw\">\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\">\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#000000\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.2\" condition=\"overlay && bg.type !== 'color'\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n\n    <div class=\"container\">\n        <div class=\"media-container-column mbr-white col-md-8\">\n            <h1 id=\"quinta\" class=\"mbr-section-title align-left mbr-bold pb-3 mbr-fonts-style\" mbr-theme-style=\"display-1\" mbr-if=\"showTitle\">\n                \n            </h1>\n            <h3 class=\"mbr-section-subtitle align-left mbr-light pb-3 mbr-fonts-style\" mbr-theme-style=\"display-2\" mbr-if=\"showSubTitle\">\n                Budget\n            </h3>\n            <p id=\"quinta_txt\" class=\"mbr-text align-left pb-3 mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showText\">\n            </p>\n            <div class=\"mbr-section-btn align-left\" mbr-if=\"showButtons\" mbr-buttons mbr-theme-style=\"display-4\">\n                <a class=\"btn btn-md btn-primary\" href=\"https://mobirise.com\">LEARN MORE</a>\n                <a class=\"btn btn-md btn-black-outline\" href=\"https://mobirise.com\">LIVE DEMO</a>\n            </div>\n        </div>\n    </div>\n\n    <div mbr-if=\"showArrow\" class=\"mbr-arrow hidden-sm-down\" aria-hidden=\"true\">\n        <a href=\"#next\">\n            <i class=\"mbri-down mbr-iconfont\"></i>\n        </a>\n    </div>\n    \n    \n<!--  SCRIPT DA COPIARE PER PREBNDERE I DATI DA FIREBASE -->\n\n{JS_CODE_0}\n{JS_CODE_1}\n    <!--  FINE SCRIPT DA COPIARE PER PREBNDERE I DATI DA FIREBASE -->\n\n    \n    \n</section>",
+          "_cid": "qKxRN7NtQ8",
+          "_anchor": "header9-c",
+          "_PHPplaceholders": [],
+          "_JSplaceholders": [
+            "<script src=\"https://www.gstatic.com/firebasejs/4.10.0/firebase.js\"></script>",
+            "<script>\n  // Initialize Firebase\n  var config = {\n    apiKey: \"AIzaSyDp-mWaWEI07pIdRUhi6vA-salEMRWz4hw\",\n    authDomain: \"quiz-e5e5a.firebaseapp.com\",\n    databaseURL: \"https://quiz-e5e5a.firebaseio.com\",\n    projectId: \"quiz-e5e5a\",\n    storageBucket: \"quiz-e5e5a.appspot.com\",\n    messagingSenderId: \"901845403492\"\n  };\n  firebase.initializeApp(config);\n\n    var quinta = document.getElementById(\"quinta\");\n    var dbref = firebase.database().ref().child(\"quinta\");\n    dbref.on(\"value\", snap => quinta.innerText = snap.val());\n    \n    var quinta_txt = document.getElementById(\"quinta_txt\");\n    var dbref = firebase.database().ref().child(\"quinta_txt\");\n    dbref.on(\"value\", snap => quinta_txt.innerText = snap.val());\n    \n    /*\n    def creavar(id,name){\n\tvar id = document.getElementById(name);\n    var dbref = firebase.database().ref().child(name);\n    dbref.on(\"value\", snap => id.innerText = snap.val()); \n    }\n    \n    var terze_txt;\n    creavar(terze_txt,\"terze_txt\")\n  */  \n</script>"
+          ],
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
         }
       ]
     },

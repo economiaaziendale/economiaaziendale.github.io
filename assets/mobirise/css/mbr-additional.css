@@ -1407,6 +1407,20 @@ body {
 #custom-html-b #blue {
   background: blue;
 }
+.cid-qKxRN7NtQ8 {
+  background-image: url("../../../assets/images/background1.jpg");
+}
+.cid-qKxRN7NtQ8 h1 {
+  color: #616161;
+}
+.cid-qKxRN7NtQ8 h2,
+.cid-qKxRN7NtQ8 h3,
+.cid-qKxRN7NtQ8 p {
+  color: #767676;
+}
+.cid-qKxRN7NtQ8 .mbr-section-subtitle {
+  font-style: italic;
+}
 .cid-qIoeWvun6q {
   padding-top: 60px;
   padding-bottom: 60px;
