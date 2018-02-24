@@ -1401,6 +1401,12 @@ body {
 .cid-qKxRN7NtQ8 .mbr-section-subtitle {
   font-style: italic;
 }
+#custom-html-d {
+  /* Type valid CSS here */
+}
+#custom-html-d .my-image {
+  width: 100%;
+}
 .cid-qIoeWvun6q {
   padding-top: 60px;
   padding-bottom: 60px;
