@@ -1387,26 +1387,6 @@ body {
     width: 100% !important;
   }
 }
-#custom-html-b {
-  /* Type valid CSS here */
-}
-#custom-html-b .my-image {
-  width: 100%;
-}
-#custom-html-b #colors button {
-  border: 1px solid black;
-  margin: 10px 0 10px 0;
-  cursor: pointer;
-}
-#custom-html-b #orange {
-  background: orange;
-}
-#custom-html-b #green {
-  background: green;
-}
-#custom-html-b #blue {
-  background: blue;
-}
 .cid-qKxRN7NtQ8 {
   background-image: url("../../../assets/images/background1.jpg");
 }

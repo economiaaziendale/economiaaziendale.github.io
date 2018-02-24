@@ -105,23 +105,6 @@
           "_params": {}
         },
         {
-          "_customTemplate": true,
-          "_afterNavbarItem": false,
-          "_customHTML": "\n<center>\n    <div id=\"colors\">\n        <button id=\"orange\">click</button>\n        <button id=\"green\">click</button>\n        <button id=\"blue\">click</button>\n    </div>\n</center>\n\n<h1>5bs</h1>\n<h3 id=\"quinta\"></h3>\n<p id=\"quinta_txt\"></p><p>\n</p><h1>4bs</h1>\n<h3 id=\"quarta\"></h3>\n<p id=\"quarta_txt\"></p>\n\n\n<h1>3be e 3acc</h1>\n<h3 id=\"terze\"></h3>\n<p id=\"terze_txt\"></p>\n\n{JS_CODE_0}\n{JS_CODE_1}",
-          "_customCSS": "/* Type valid CSS here */\n.my-image {\n  width: 100%;\n}\n\n#colors button {\n    border: 1px solid black;\n    margin: 10px 0 10px 0;\n    cursor: pointer;\n}\n\n#orange\n{\n    background: orange;\n}\n\n#green\n{\n    background: green;\n}\n#blue\n{\n    background: blue;\n}",
-          "alias": "code-editor",
-          "_tags": [
-            "Extension"
-          ],
-          "_name": "pro.custom-html",
-          "_anchor": "custom-html-b",
-          "_PHPplaceholders": [],
-          "_JSplaceholders": [
-            "<script src=\"https://www.gstatic.com/firebasejs/4.10.0/firebase.js\"></script>",
-            "<script>\n  // Initialize Firebase\n  var config = {\n    apiKey: \"AIzaSyDp-mWaWEI07pIdRUhi6vA-salEMRWz4hw\",\n    authDomain: \"quiz-e5e5a.firebaseapp.com\",\n    databaseURL: \"https://quiz-e5e5a.firebaseio.com\",\n    projectId: \"quiz-e5e5a\",\n    storageBucket: \"quiz-e5e5a.appspot.com\",\n    messagingSenderId: \"901845403492\"\n  };\n  firebase.initializeApp(config);\n\n    var quinta = document.getElementById(\"quinta\");\n    var dbref = firebase.database().ref().child(\"quinta\");\n    dbref.on(\"value\", snap => quinta.innerText = snap.val());\n    \n    var quarta = document.getElementById(\"quarta\");\n    var dbref = firebase.database().ref().child(\"quarta\");\n    dbref.on(\"value\", snap => quarta.innerText = snap.val());\n    \n    var terze = document.getElementById(\"terze\");\n    var dbref = firebase.database().ref().child(\"terze\");\n    dbref.on(\"value\", snap => terze.innerText = snap.val());\n    \n    var quinta_txt = document.getElementById(\"quinta_txt\");\n    var dbref = firebase.database().ref().child(\"quinta_txt\");\n    dbref.on(\"value\", snap => quinta_txt.innerText = snap.val());\n    \n    var quarta_txt = document.getElementById(\"quarta_txt\");\n    var dbref = firebase.database().ref().child(\"quarta_txt\");\n    dbref.on(\"value\", snap => quarta_txt.innerText = snap.val());\n\n    var terze_txt = document.getElementById(\"terze_txt\");\n    var dbref = firebase.database().ref().child(\"terze_txt\");\n    dbref.on(\"value\", snap => terze_txt.innerText = snap.val());\n    /*\n    def creavar(id,name){\n\tvar id = document.getElementById(name);\n    var dbref = firebase.database().ref().child(name);\n    dbref.on(\"value\", snap => id.innerText = snap.val()); \n    }\n    \n    var terze_txt;\n    creavar(terze_txt,\"terze_txt\")\n  */  \n</script>"
-          ]
-        },
-        {
           "_styles": {
             "& when not (@fullScreen)": {
               "padding-top": "(@paddingTop * 15px)",
