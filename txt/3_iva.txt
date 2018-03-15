@@ -1,0 +1,61 @@
+L'IVA
+
+Cos'è l'IVA?
+è un'imposta indiretta, imposta sul valore aggiunto, che colpisce i consumi. Si applica, infatti, alla cessione di beni o alle prestazioni di servizi (presupposto oggettivo) effettuate nel territorio dello Stato (presupposto territoriale) nell'esercizio di imprese, arti e progessioni (presupposto soggettivo).
+
+Cosa sono i presupposti per l'applicazione dell'IVA?
+Sono delle condizioni che devono essere, tutte, presenti perché sorga l'obbligo di applicare l'IVA. Il presupposto soggettivo (vedi sopra) ad esempio ci dice che, in sua assenza, non si applica l'IVA. Se a vendere un bene usato è un privato ad un altro priva, non c'è il presupposto soggettivo (nessuno dei due soggetti è un imprenditore, un artista o un professionista), per cui l'IVA non si applica a quella cessione di un bene (il presupposto oggettivo c'è, quello soggettivo non c'è). Quindi, la mancanza anche di un solo presupposto fa venir meno l'obbligo di applicare e pagare l'imposta.
+
+Quali sono le caratteristiche dell'IVA.
+La generalità, la caratteristica di essere un'imposta indiretta, proporzionale e che colpisce i consumi.
+
+Cosa significa imposta generale?
+Colpisce tutti i consumatori, senza distinzioni (altre imposte, ad esempio, non colpiscono i contribuenti che non superano un certo reddito).
+
+Cosa significa imposta indiretta?
+Colpisce il reddito non quando lo si percepisce, ma al momento in cui viene utilizzato per acquistare un bene o un servizio (l'IRPEF, invece, è un'imposta diretta, perché colpisce il reddito quando viene percepito)
+
+Cosa significa imposta proporzionale?
+Se il bene ha un'IVA del 10%, l'aliquota rimane sempre la stessa sia per un acquisto di 1 euro che per uno di 10.000 euro. Altre imposte, come l'IRPEF, invece, sono progressive o più che proporzionali, perché a fasce di reddito maggiori si applicano aliquote più alte.
+
+Cosa significa imposta sui consumi?
+Significa che, mentre le imprese acquistano per produrre, i consumatori acquistano per consumare direttamente i prodotti acquistati. Quindi, lo Stato distingue tra acquisti per produzione e acquisti per consumo. Sugli acquisti a scopo produttivo lo Stato fa pagare l'IVA anche alle imprese, ma poi le imprese potranno detrarre questa IVA pagata da quella incassata dai clienti al momento della vendita, per cui, di fatto, non la pagano, perché l'acquisto ha scopo produttivo. I consumatori, invece, la acquistano per consumare i prodotti o i servizi e non potranno detrarla, rimanendo così gli unici a sopportare il carico dell'imposta. Lo Stato, così, utilizza le imprese per riscuotere l'imposta dai clienti.
+
+Quali sono le aliuquote IVA?
+4% (super ridotta o minima, sui beni di prima necessità), 10% (ridotta, su servizi di hotel e ristorante, carne, cereali, medicinali ecc.), 22% (ordinaria, su tutti gli altri beni)
+
+Come si calcola l'IVA da versare allo Stato?
+Le imprese acquistano dai fornitori e pagano l'IVA sulle merci acquistate (IVA a credito verso lo Stato). In seguito vendono le merci ai clienti e incassano l'IVA ai clienti (che però l'impresa deve restituire allo Stato, è quindi IVA a debito verso lo Stato). Alla fine del mese (o del trimestre), si fa la differenza tra IVA a debito (sulle vendite) e IVa a credito (sugli acquisti) e se i debiti sono maggiori, si versa la differenza allo Stato.
+
+Entro quale giorno si deve versare l'IVA allo Stato?
+entro il 16 del mese successivo al mese di riferimento delle fatture, per i contribuenti con liquidazione IVA mensile. Entro il 16 del secondo mese successivo a quello cui ri riferisce la liquazione, per i contribuenti con liquidazione IVA trimestrale.
+
+Chi può optare per la liquidazione IVA trimestrale?
+I contribuenti del settore servizi con volume annuo d'affari fino a 400.000 euro e degli altri settori fino a 700.000 euro.
+
+Quali sono gli adempimenti IVA?
+La ComUnica alla Camera di commercio, l'emissione delle fatture, scontrini o ricevute, la tenuta dei registri IVA e la liquidazione e versamento dell'IVA.
+
+Cos'è la base imponibile IVA?
+è la somma degli importi delle merci o servizi acquistati, al netto di eventuali sconti, con i costi accessori (non documentati).
+
+Gli imballaggi a rendere vanno nella base imponibile?
+No, il loro importo rappresenta una cauzione, non una vendita.
+
+Gli imballaggi a perdere sono un costo accessorio su cui va calcolata l'IVA (e che quindi vanno inseriti nella base imponibile)?
+Sì.
+
+Cos'è lo scontrino?
+è un documento certificativo delle vendite che contiene data, ora, numero progressivo, importi comprensivi di IVA e dati identificativi del venditore. Inoltre riporta il logotipo fiscale (MF= misuratore fiscale) e il numero identificativo del misuratore fiscale (registratore di cassa).
+
+Cos'è lo scontrino parlante?
+Lo scontrino che contiene anche il codice fiscale del cliente.
+
+Da chi viene emesso?
+Dagli operatori economici come ristoranti, hotel, commercianti al dettaglio, farmacie, parrucchieri, artigiani ecc., per le cessioni nei confronti dei consumatori finali.
+
+Cos'è la ricevuta fiscale?
+è un documentovcertificativo delle vendite che può essere usato in alternativa allo scontrino fiscale. Contiene il numero progressivo di emissione, la data, i dati dell'emittente (nome, indirizzo e partita iva), la descrizione dei beni o servizi venduti, il loro importo e il totale comprensivo di IVa.
+
+Come si fa a calcolare l'IVA nei corrispettivi e nelle ricevute fiscali, dato che l'IVA non è indicata, ma è inclusa nel totale?
+Si effettua lo scorporo dell'IVA con la proporzione importo : (100 + aliquota) = x : aliquota, oppure, se si vuole trovare la base imponibile importo : (100 + aliquota) = x : 100
